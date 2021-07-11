@@ -1,0 +1,151 @@
+body{
+	padding: 0px;
+	margin: 0px;
+	background:black;
+	font-family: freemono;
+	#1b141a
+
+}
+.container{
+	display: -webkit-flex;
+	display: flex;
+	
+    flex-wrap: nowrap;
+    /**position:relative;**/
+}
+#profil{
+	border-radius: 100%;
+	width: 100px;
+	height: 100px;
+}
+#item1{
+	background: -moz-linear-gradient(darkred,black);
+	height: 400px;
+	width: 30%;
+	max-width: 30%;
+	max-height: 100%;
+	color: gray;
+	min-width: 25%;
+}
+#item2{
+	margin-left: 150px;
+	margin-right: 150px;
+    min-width: 50%;
+}
+@keyframes example{
+	0%{left:0px;right:0px;}
+	25%{left:-50px;right:50px;}
+	50%{left:-100px;right:100px;}
+	75%{left:-50px;right:50px;}
+	100%{left:0px;right:0px;}
+}
+.container2{
+  display: flex;
+  flex-wrap: nowrap;
+  border:solid;
+  border-color: darkred;
+  border-radius: 20px;
+  margin-top: 10px;
+   box-shadow: 0 0 30px darkred;
+   position: relative;
+   animation-name: example;
+   animation-duration: 4s;
+   animation-iteration-count: infinite;
+   height: 350px;
+
+}
+#profil2{
+	width: 300px;
+	height: 300px;
+	border: solid;
+	border-radius: 20px;
+	border-color: white;
+	
+
+}
+#element1 ,#element2{
+	margin-right: 25px;
+	margin-left: 25px;
+	margin-bottom: 25px;
+
+}
+.container3{
+	display: flex;
+	flex-wrap: wrap;
+	/**justify-content: space-between;**/
+
+}
+#fst{
+	position: relative;
+	border:solid;
+	background:linear-gradient(to right,darkred,indigo,blue);
+	border-color:black;
+	border-radius: 10px; 
+	height: 200px;
+	width: 400px;
+	margin-right: 10px;
+	margin-left: 10px; 
+	margin-top: 10px;
+	object-fit: cover;
+	transition: 0.5s;
+}
+#snd{
+	position: relative;
+	border:solid;
+	background:linear-gradient(to right,darkred,indigo,blue);
+	border-color:black;
+	border-radius: 10px; 
+	height: 200px;
+	width: 400px;
+	margin-right: 10px;
+	margin-left: 10px; 
+	margin-top: 10px;
+	object-fit: cover;
+	transition: 0.5s;
+}
+#trd{
+	position: relative;
+	border:solid;
+	background:linear-gradient(to right,darkred,indigo,blue);
+	border-color:black;
+	border-radius:10px; 
+	height: 200px;
+	width: 400px;
+	margin-right:10px;
+	margin-left:10px; 
+	margin-top:10px;
+	object-fit:cover;
+	transition: 0.5s;
+}
+/**#fst:hover{
+	opacity: 0;
+}
+#snd:hover{
+	opacity: 0;
+}
+#trd:hover{
+opacity: 0;
+}**/
+.container3 .contenu{
+	opacity: 0;
+	background-color: black;
+	border: solid;
+	border-color:black;
+	bottom: 20px;
+	left: 10%;
+	width: 80%;
+	height: 60px;
+	transition: 0.5s;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+.container3 .it:hover .contenu {
+  opacity: 5;
+  width: 100%;
+  height: 100%;
+  
+  left:0;
+}
+.contenu{
+	color: pink;
+}
